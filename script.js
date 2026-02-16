@@ -23,7 +23,7 @@ const products = [
             'Foundation plan',
             'Section details'
         ],
-        constructionCost: '$350,000 - $450,000'
+        constructionCost: 'R350,000 - R450,000'
     },
     {
         id: 2,
@@ -45,7 +45,7 @@ const products = [
             'HVAC specifications',
             'Interior finishing schedule'
         ],
-        constructionCost: '$650,000 - $850,000'
+        constructionCost: 'R650,000 - R850,000'
     },
     {
         id: 3,
@@ -67,7 +67,7 @@ const products = [
             'Site plan',
             'Construction notes'
         ],
-        constructionCost: '$180,000 - $240,000'
+        constructionCost: 'R180,000 - R240,000'
     },
     {
         id: 4,
@@ -89,7 +89,7 @@ const products = [
             'Stair details',
             'Material specifications'
         ],
-        constructionCost: '$420,000 - $550,000'
+        constructionCost: 'R420,000 - R550,000'
     },
     {
         id: 5,
@@ -111,7 +111,7 @@ const products = [
             'Structural details',
             'Finish schedule'
         ],
-        constructionCost: '$480,000 - $620,000'
+        constructionCost: 'R480,000 - R620,000'
     },
     {
         id: 6,
@@ -133,7 +133,7 @@ const products = [
             'Green material specifications',
             'Energy efficiency notes'
         ],
-        constructionCost: '$280,000 - $380,000'
+        constructionCost: 'R280,000 - R380,000'
     },
     {
         id: 7,
@@ -155,7 +155,7 @@ const products = [
             'Crown molding details',
             'Specialty finish schedule'
         ],
-        constructionCost: '$750,000 - $1,000,000'
+        constructionCost: 'R750,000 - R1,000,000'
     },
     {
         id: 8,
@@ -177,7 +177,7 @@ const products = [
             'Structural glazing specs',
             'Smart home integration guide'
         ],
-        constructionCost: '$580,000 - $750,000'
+        constructionCost: 'R580,000 - R750,000'
     }
 ];
 
@@ -233,7 +233,7 @@ class CartManager {
     }
 
     getFormattedTotal() {
-        return '$' + this.getTotal().toFixed(2);
+        return 'R' + this.getTotal().toFixed(2);
     }
 
     getCartItems() {
@@ -297,7 +297,7 @@ function createProductCard(product) {
             <p class="product-specs">${product.bedrooms} bed • ${product.bathrooms} bath</p>
             <p class="product-size">${product.floorArea}</p>
             <div class="product-footer">
-                <span class="product-price">${'$' + product.price.toLocaleString()}</span>
+                <span class="product-price">${'R' + product.price.toLocaleString()}</span>
                 <div class="product-buttons">
                     <a href="product.html?id=${product.id}" class="btn btn-secondary">View Plan</a>
                     <button class="btn btn-primary" onclick="addToCart(${product.id})">Add</button>
@@ -348,7 +348,7 @@ function loadProductDetail() {
     document.getElementById('productImage').textContent = product.image;
     document.getElementById('productName').textContent = product.name;
     document.getElementById('productCode').textContent = 'Plan Code: ' + product.code;
-    document.getElementById('productPrice').textContent = '$' + product.price.toLocaleString();
+    document.getElementById('productPrice').textContent = 'R' + product.price.toLocaleString();
     document.getElementById('productDescription').textContent = product.description;
     
     // Specifications
@@ -414,7 +414,7 @@ function loadCartPage() {
                     <input type="number" value="${item.quantity}" min="1" onchange="updateItemQuantity(${item.id}, this.value)">
                 </div>
             </div>
-            <span class="cart-item-price">$${(item.price * item.quantity).toLocaleString()}</span>
+            <span class="cart-item-price">R${(item.price * item.quantity).toLocaleString()}</span>
             <button class="cart-item-remove" onclick="removeItemFromCart(${item.id})">Remove</button>
         `;
         
@@ -428,8 +428,8 @@ function loadCartPage() {
 // Update cart summary
 function updateCartSummary() {
     const subtotal = cartManager.getTotal();
-    document.getElementById('subtotal').textContent = '$' + subtotal.toFixed(2);
-    document.getElementById('total').textContent = '$' + subtotal.toFixed(2);
+    document.getElementById('subtotal').textContent = 'R' + subtotal.toFixed(2);
+    document.getElementById('total').textContent = 'R' + subtotal.toFixed(2);
 }
 
 // Remove item from cart
@@ -466,13 +466,13 @@ function loadCheckoutPage() {
     let total = 0;
 
     cartItems.forEach(item => {
-        plansText += `- ${item.name} (Code: ${item.code}) | Quantity: ${item.quantity} | $${item.price.toLocaleString()} each\n`;
+        plansText += `- ${item.name} (Code: ${item.code}) | Quantity: ${item.quantity} | R${item.price.toLocaleString()} each\n`;
         
         summaryHTML += `
             <div class="summary-item">
                 <div class="summary-item-name">${item.name}</div>
                 <div style="font-size: 0.9rem; color: #999; margin-bottom: 0.3rem;">Qty: ${item.quantity}</div>
-                <div class="summary-item-price">$${(item.price * item.quantity).toLocaleString()}</div>
+                <div class="summary-item-price">R${(item.price * item.quantity).toLocaleString()}</div>
             </div>
         `;
         
@@ -481,7 +481,7 @@ function loadCheckoutPage() {
 
     selectedPlansTextarea.value = plansText.trim();
     summaryItems.innerHTML = summaryHTML;
-    document.getElementById('checkoutTotal').textContent = '$' + total.toFixed(2);
+    document.getElementById('checkoutTotal').textContent = 'R' + total.toFixed(2);
 
     // Handle form submission
     const form = document.getElementById('checkoutForm');
