@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Plan - Nomnotho Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Nomnotho Projects</h1>
+                <p class="tagline">Architectural Design & General Construction</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop Plans</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    Cart <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-header">
+                <a href="shop.html" class="back-link">← Back to Plans</a>
+            </div>
+            <div class="product-grid">
+                <div class="product-image">
+                    <div class="placeholder-image-large" id="productImage"></div>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">
+                        <h1 id="productName"></h1>
+                        <p class="product-code" id="productCode"></p>
+                    </div>
+                    <div class="product-price" id="productPrice"></div>
+                    <p class="product-description" id="productDescription"></p>
+
+                    <!-- Specifications -->
+                    <div class="specifications">
+                        <h3>Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Bedrooms:</span>
+                                <span class="spec-value" id="bedrooms"></span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Bathrooms:</span>
+                                <span class="spec-value" id="bathrooms"></span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Floor Area:</span>
+                                <span class="spec-value" id="floorArea"></span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Storeys:</span>
+                                <span class="spec-value" id="storeys"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What's Included -->
+                    <div class="whats-included">
+                        <h3>What's Included</h3>
+                        <ul class="included-list" id="includedList">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+
+                    <!-- Construction Cost -->
+                    <div class="construction-cost">
+                        <h3>Estimated Construction Cost</h3>
+                        <p id="constructionCost"></p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="product-actions">
+                        <button class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
+                        <button class="btn btn-secondary" id="customizeBtn">Request Customization</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Nomnotho Projects</h4>
+                    <p>Architectural Design & General Construction</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Plans</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">House Plans</a></li>
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Carpentry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nomnotho Projects. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

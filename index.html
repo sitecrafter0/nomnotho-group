@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomnotho Projects - Architectural Design & General Construction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Nomnotho Projects</h1>
+                <p class="tagline">Architectural Design & General Construction</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="shop.html" class="nav-link">Shop Plans</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    Cart <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-headline">Ready-to-Build Residential House Plans</h1>
+            <p class="hero-subheadline">Professional, architect-designed plans ready for construction</p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="btn btn-primary">Browse Plans</a>
+                <a href="#contact" class="btn btn-secondary">Request Consultation</a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Featured House Plans -->
+    <section class="featured-plans">
+        <div class="container">
+            <h2 class="section-title">Featured House Plans</h2>
+            <div class="featured-grid" id="featuredPlans">
+                <!-- Plans will be loaded by JavaScript -->
+            </div>
+            <div class="section-cta">
+                <a href="shop.html" class="btn btn-primary">View All Plans</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Browse Plans</h3>
+                    <p>Explore our curated collection of professionally designed residential house plans.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Add to Cart</h3>
+                    <p>Select the plans you're interested in and add them to your cart.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Submit Request</h3>
+                    <p>Complete our contact form with your details and selected plans.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>We Contact You</h3>
+                    <p>Our team will reach out to finalize your purchase and discuss customizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Services -->
+    <section class="construction-services">
+        <div class="container">
+            <h2 class="section-title">General Construction Services</h2>
+            <div class="services-content">
+                <div class="service-text">
+                    <h3>Professional Construction Solutions</h3>
+                    <p>Beyond house plans, Nomnotho Projects provides comprehensive residential construction services. Our experienced team handles every aspect of your project, from foundation to finishing touches, ensuring quality craftsmanship and timely delivery.</p>
+                    <ul class="service-list">
+                        <li>Foundation and structural work</li>
+                        <li>Masonry and concrete solutions</li>
+                        <li>Drywall and insulation</li>
+                        <li>Full project management</li>
+                        <li>Quality assurance and inspections</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+                </div>
+                <div class="service-image">
+                    <div class="placeholder-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carpentry Services -->
+    <section class="carpentry-services">
+        <div class="container">
+            <h2 class="section-title">Carpentry Services</h2>
+            <div class="carpentry-grid">
+                <div class="carpentry-card">
+                    <div class="card-icon">🪑</div>
+                    <h3>Custom Cabinetry</h3>
+                    <p>Bespoke cabinet designs tailored to your kitchen, bathroom, and storage needs.</p>
+                </div>
+                <div class="carpentry-card">
+                    <div class="card-icon">🏠</div>
+                    <h3>Roofing Structures</h3>
+                    <p>Professional roof framing and installation ensuring durability and weather resistance.</p>
+                </div>
+                <div class="carpentry-card">
+                    <div class="card-icon">🚪</div>
+                    <h3>Doors & Windows</h3>
+                    <p>Expert installation of premium doors and windows for optimal functionality and aesthetics.</p>
+                </div>
+                <div class="carpentry-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Interior Wood Finishes</h3>
+                    <p>Elegant wood finishes including flooring, trim, and decorative elements throughout your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Nomnotho Projects delivered exceptional designs and quality construction. Our dream home became a reality on time and within budget."</p>
+                    <p class="testimonial-author">— Sarah & Michael Johnson</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The attention to detail and professional service was outstanding. We couldn't be happier with our new home."</p>
+                    <p class="testimonial-author">— David Chen</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Outstanding craftsmanship and excellent communication throughout the entire project. Highly recommended!"</p>
+                    <p class="testimonial-author">— Elizabeth Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:nomnothogroup@gmail.com">nomnothogroup@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone & WhatsApp</h3>
+                    <p><a href="tel:0671707892">0671707892</a></p>
+                    <p style="font-size: 0.9rem; color: #999; margin-top: 0.3rem;">WhatsApp Ready</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>123 Architecture Street<br>Design City, DC 12345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Nomnotho Projects</h4>
+                    <p>Architectural Design & General Construction</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop Plans</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">House Plans</a></li>
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Carpentry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nomnotho Projects. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
